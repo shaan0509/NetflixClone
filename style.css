@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins'sans-serif;
+    box-sizing: border-box;
+}
+body{
+background-color: black;      
+
+color: white;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("backg.jpg");
+  
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 10px 8%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.logo{
+    width: 150px;
+    cursor: pointer;
+}
+nav button {
+    border: 0;
+    outline: 0;
+    background: #db0001;
+    color: #fff;
+    padding: 7px 20px;
+    font-size: 12px;
+    border-radius: 4px;
+    margin-left:10;
+    cursor: pointer;
+}
+.lang_button{
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid white;
+    padding: 7px 10px;
+    margin-right: 7px;
+}
+ .lang_button img{
+    width: 9px;
+    margin-left: 15px;
+} 
+.header-content
+{
+    position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+text-align: center;
+margin-top: 100px;
+}
+.header-content h1{
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 600;
+    max-width: 650px;
+}
+.header-content h3{
+    font-weight: 500;
+    margin-bottom: 20;
+}
+.email-signup{
+     background-color: white;
+    border-radius: 4px;
+display: flex;
+align-items: center;
+overflow: hidden;
+}
+.email-signup input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin-left: 20px;
+}
+.email-signup button
+{
+background-color: #db0001;
+border: 0;
+outline: 0;
+color: white;
+font-size: 16px;
+cursor: pointer;
+padding: 15px;
+}
+/* --------------FEATURES-------------- */
+.first-section{
+    padding: 50PX 12%;
+    font-size: 22px;
+}
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.text-color{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+.img-color{
+    flex-basis: 50%;
+    margin-bottom: 20px;
+} 
+.img-color img{
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+.first-section h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.email .email-signup{
+    max-width: 600px;
+    margin: 20px auto 60px;
+}
+.email small{
+    /* margin-left: 120px; */
+    display: flex;
+    font-size: 13px;
+    justify-content: center;
+}
+/* -----------------frequently----------------------
+     */
+     .faq h2 {
+        text-align: center;
+        font-size: 48px;
+    }
+    
+    .faq {
+        background: black;
+        color: white;
+        padding: 34px;
+    }
+    
+    .faqbox:hover {
+        background-color: #414141;
+        color: white;
+    }
+    
+    .faqbox svg {
+        filter: invert(1);
+    }
+   
+    
+    .faqbox {
+        transition: all 1s ease-out;
+        font-size: 24px;
+        display: flex;
+        justify-content: space-between;
+        background-color: #2d2d2d;
+        padding: 24px;
+        max-width: 60vw;
+        margin: 34px auto;
+        cursor: pointer;
+    }
+    
+    footer {
+        color: white;
+        max-width: 60vw;
+        margin: auto;
+        padding: 60px;
+    }
+    
+    footer .questions {
+        padding: 34px 0;
+    }
+    
+    
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        color: white;
+    }
+    
+    
+    
+    @media screen and (max-width: 1300px) {
+    
+        nav{
+            max-width: 90vw;
+        }
+    
+        .first {
+            flex-wrap: wrap;
+        }
+    
+        .secImg img {
+            width: 305px;
+        }
+    
+        .secImg video {
+            width: 305px;
+        }
+    
+        .hero> :nth-child(1) {
+            font-size: 32px;
+        }
+    
+        .hero> :nth-child(2) {
+            font-size: 18px;
+        }
+    
+        .hero> :nth-child(3) {
+            font-size: 18px;
+        }
+    
+        .hero-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 16px;
+        }
+    
+        .faq h2 {
+            text-align: center;
+            font-size: 32px;
+        }
+    
+        footer {
+            max-width: 90vw;
+            padding: 75px 0;
+        }
+    
+        .footer-item{
+            align-items: center;
+        }
+     
+    
+    }
+    
+    
+    
+    @media screen and (max-width: 1300px) {
+    
+        .footer {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+        }
+    }
+    
+    
+    .footer a {
+        font-size: 14px;
+        color: white;
+    }
+    
+    .footer-item {
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+    }
